@@ -1,0 +1,13 @@
+entity Task {
+	name String
+    description String
+}
+
+relationship OneToMany {
+	Task{subtask} to Subtask
+}
+
+entity Subtask {
+	countryName String
+}
+
